@@ -205,3 +205,5 @@ module.exports = {
 | style:      | 样式代码修改，不涉及到业务逻辑，单纯的样式修改                                                                                                     | style: 适配移动端<br />style: 首页文字颜色优化                                  |
 | docs:       | 文档类型修改，不涉及到业务逻辑                                                                                                                     | docs: update readme<br />docs: 新增使用文档                                     |
 | test:       | 测试逻辑                                                                                                                                           | test: 测试 MQTT Hooks                                                           |
+
+> 更多内容，详见 DOC.md 文档
