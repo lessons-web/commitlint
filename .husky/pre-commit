@@ -2,3 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run lint
+
+# 运行随机数检查
+./_shells/check-random.sh
