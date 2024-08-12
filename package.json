@@ -1,7 +1,7 @@
 {
   "name": "name-of-your-project",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -35,5 +35,10 @@
     "conventional-changelog-cli": "^2.2.2",
     "conventional-changelog-custom-config": "^0.3.1",
     "husky": "^8.0.3"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"npm run lint"
+    }
   }
 }
