@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const compareFunc = require('compare-func');
 
 module.exports = {

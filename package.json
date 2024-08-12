@@ -1,7 +1,7 @@
 {
   "name": "name-of-your-project",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'",
+    "precommit": "npx husky add .husky/pre-commit 'npm run lint'",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog.config.js"
   },
   "dependencies": {
