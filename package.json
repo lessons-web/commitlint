@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'",
+    "precommit": "npx husky add .husky/pre-commit 'npm run lint'",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog.config.js"
   },
   "dependencies": {
@@ -35,10 +36,5 @@
     "conventional-changelog-cli": "^2.2.2",
     "conventional-changelog-custom-config": "^0.3.1",
     "husky": "^8.0.3"
-  },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npm run lint"
-    }
   }
 }
